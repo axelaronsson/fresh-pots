@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0">
+    <title>GIF Background Example</title>
+    <style>
+        header {
+            height: 100px;
+            background: #d3d3d3;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        section {
+            height: 500px;
+        }
+    </style>
 </head>
-<style>
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        height: 100vh;
-        justify-content: center;
-        /* width: 100vw; */
-    }
-    .card {
-        border: 1px solid grey;
-        min-width: 300px;
-        width: 51%;
-        height: 50vh;
-    }
-    h1 {
-        text-align: center;
-    }
-</style>
+
 <body>
-    <h1>RG Final</h1>
-    <div class="wrapper">
-        <div class="card" style="background: url(/images/20260424202313_879x600_Recording\ 2026-04-24\ 202018.gif);background-size: cover;"></div>
-        <div class="card" style="background: teal;"></div>
-        <div class="card" style="background: #f1f1f1;"></div>
-    </div>
+<header>
+    <div class="logo"><h1>Header</h1></div>
+</header>
+
+<section style="background-color: coral;"></section>
+<section style="background-color: darkseagreen;"></section>
+<section style="background-color:lightskyblue;"></section>
 </body>
+
 </html>
