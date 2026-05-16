@@ -3,20 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, 
-      width=device-width, initial-scale=1.0, 
-      minimum-scale=1.0">
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0",
+      minimum-scale=1>
+    <title>GIF Background Example</title>
     <style>
-        html, body {
-            height: 100%;
-            padding: 0;
-            margin: 0;
-        }
         header {
             height: 100px;
-            background: #fff;
-            border: 5px solid;
-            color: black;
+            background: #d3d3d3;
             display: flex;
             position: fixed;
             top: env(titlebar-area-y);
@@ -31,6 +26,18 @@
         section {
             height: 500px;
         }
+        .bottom-bar {
+            height: 100px;
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            bottom: env(safe-area-inset-bottom);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border: 5px solid grey;
+        }
     </style>
 </head>
 
@@ -42,6 +49,9 @@
 <section style="background-color: coral;"></section>
 <section style="background-color: darkseagreen;"></section>
 <section style="background-color:lightskyblue;"></section>
+<div class="bottom-bar">
+    <h2>Bottom bar</h2>
+</div>
 </body>
 
 </html>
