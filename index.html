@@ -9,13 +9,16 @@
       minimum-scale=1>
     <title>GIF Background Example</title>
     <style>
+        html {
+            height: 100%;
+        }
         header {
             height: 100px;
             background: #d3d3d3;
             display: flex;
             position: fixed;
-            top: 0px;
-            transform: translate3d(0,0,0);
+            /* top: calc(30px + env(titlebar-area-height)); */
+            top: 0;
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -38,7 +41,7 @@
             align-items: center;
             color: #fff;
             box-sizing: border-box;
-            border: 5px solid gray;
+            border: 5px solid yellow;
         }
     </style>
 </head>
