@@ -10,7 +10,10 @@
     <title>Viewport height lab</title>
     <style>
         html, body {
-            height: 100vh;
+            margin: 0;
+            padding: 0;
+            /* height: 100dvh;
+            min-height: -webkit-fill-available; */
         }
         header {
             height: 100px;
@@ -34,16 +37,16 @@
         }
         .bottom-bar {
             height: 100px;
-            background-color: whitesmoke;
+            background-color: black;
             position: fixed;
             width: 100%;
-            top: calc(100% - 100px);
+            bottom: calc(0.25rem * 0);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: black;
+            color: white;
             box-sizing: border-box;
-            border: 5px solid green;
+            border: 5px solid grey;
         }
     </style>
 </head>
@@ -56,7 +59,7 @@
 <main>
 
 
-<section style="background-color: green;">
+<section style="background-color:lemonchiffon;">
   <h2>Space & Science Fun Facts</h2>
   <ol>
     <li>Bananas are naturally slightly radioactive.</li>
@@ -72,36 +75,36 @@
   </ol>
 </section>
 
-<section style="background-color: indigo;">
-  <h2>History & Culture Fun Facts</h2>
-  <ol>
-    <li>The shortest war in history lasted only 38 minutes.</li>
-    <li>Ancient Romans used crushed mouse brains as toothpaste.</li>
-    <li>Napoleon was once attacked by rabbits.</li>
-    <li>The first alarm clock only rang at 4 a.m.</li>
-    <li>Oxford University is older than the Aztec Empire.</li>
-    <li>Vikings used animal bones to make skates.</li>
-    <li>The world’s oldest known recipe is for beer.</li>
-    <li>In medieval times, animals were sometimes put on trial.</li>
-    <li>The inventor of the frisbee was turned into a frisbee after death.</li>
-    <li>Bubble wrap was originally invented as wallpaper.</li>
-  </ol>
+<section style="background-color:navy;color:white;">
+  <h2>Space Fun Facts</h2>
+<ul>
+  <li>A day on Venus is longer than a year on Venus.</li>
+  <li>Neutron stars are so dense that a teaspoon of their material would weigh billions of tons on Earth.</li>
+  <li>There are more stars in the universe than grains of sand on all the beaches on Earth.</li>
+  <li>Jupiter has the shortest day of all the planets, spinning once in just under 10 hours.</li>
+  <li>Space is completely silent because sound cannot travel through a vacuum.</li>
+  <li>The footprints left by Apollo astronauts on the Moon could last for millions of years.</li>
+  <li>A single suit worn by astronauts for spacewalks costs millions of dollars.</li>
+  <li>Saturn could float in water because its average density is lower than water’s density.</li>
+  <li>Black holes can slow down time due to their extremely strong gravity.</li>
+  <li>The largest known volcano in the solar system is Olympus Mons on Mars, about three times taller than Mount Everest.</li>
+</ul>
 </section>
 
-<section style="background-color: gray;">
-  <h2>History & Culture Fun Facts</h2>
-  <ol>
-    <li>The shortest war in history lasted only 38 minutes.</li>
-    <li>Ancient Romans used crushed mouse brains as toothpaste.</li>
-    <li>Napoleon was once attacked by rabbits.</li>
-    <li>The first alarm clock only rang at 4 a.m.</li>
-    <li>Oxford University is older than the Aztec Empire.</li>
-    <li>Vikings used animal bones to make skates.</li>
-    <li>The world’s oldest known recipe is for beer.</li>
-    <li>In medieval times, animals were sometimes put on trial.</li>
-    <li>The inventor of the frisbee was turned into a frisbee after death.</li>
-    <li>Bubble wrap was originally invented as wallpaper.</li>
-  </ol>
+<section style="background-color:gainsboro;">
+  <h2>Geographical Fun Facts</h2>
+<ul>
+  <li>Asia is the largest continent on Earth, covering about 30% of the planet’s total land area.</li>
+  <li>The Nile River in Africa is one of the longest rivers in the world, stretching over 6,650 kilometers.</li>
+  <li>Mount Everest, located in the Himalayas, is the highest mountain above sea level at 8,848.86 meters.</li>
+  <li>Russia spans 11 time zones, more than any other country.</li>
+  <li>The Sahara Desert is the largest hot desert in the world, covering much of North Africa.</li>
+  <li>Canada has more lakes than the rest of the world combined.</li>
+  <li>Antarctica is the driest, coldest, and windiest continent on Earth.</li>
+  <li>The Amazon Rainforest produces around 20% of the world’s oxygen and is home to millions of species.</li>
+  <li>Australia is the only country that is also considered an entire continent.</li>
+  <li>The Dead Sea, located between Jordan and Israel, is one of the saltiest bodies of water on Earth, allowing people to float easily.</li>
+</ul>
 </section>
 </main>
 <div class="bottom-bar">
