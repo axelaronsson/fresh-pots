@@ -12,8 +12,8 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100dvh;
-            min-height: -webkit-fill-available;
+            /* height: 100dvh;
+            min-height: -webkit-fill-available; */
         }
         header {
             height: 100px;
@@ -51,12 +51,11 @@
         }
         .popup {
             position: fixed;
-            bottom: 0;
+            top: 0;
             left: 0;
-            height: 100dvh;
+            height: 100%;
             width: 50%;
-            transform: translateY(env(safe-area-inset-bottom));
-            background-color: green;
+            background-color: deeppink;
             opacity: 0.5;
             z-index: 2;
         }
@@ -119,10 +118,17 @@
 </ul>
 </section>
 </main>
-<!-- <div class="bottom-bar">
+<div class="bottom-bar">
     <h2>Bottom bar</h2>
-</div> -->
-<div class="popup"></div>
+</div>
+<!-- <div class="popup"></div> -->
+<script type="text/javascript">
+const bottomBar = document.querySelector(".bottom-bar");
+
+window.addEventListener('scroll', () => {
+    bottomBar.innerHTML = "<p>" + window.innerHeight + "</p>";
+})
+</script>
 </body>
 
 </html>
