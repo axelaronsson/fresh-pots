@@ -12,7 +12,6 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: visible;
             /* height: 100dvh;
             min-height: -webkit-fill-available; */
         }
@@ -50,6 +49,16 @@
             box-sizing: border-box;
             border: 5px solid grey;
         }
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background-color: deeppink;
+            opacity: 0.5;
+            z-index: 2;
+        }
     </style>
 </head>
 
@@ -60,7 +69,8 @@
 </header>
 <main>
 
-<section style="background-color:orange;">
+
+<section style="background-color:lemonchiffon;">
   <h2>Space & Science Fun Facts</h2>
   <ol>
     <li>Bananas are naturally slightly radioactive.</li>
@@ -76,7 +86,7 @@
   </ol>
 </section>
 
-<section style="background-color:lemonchiffon;">
+<section style="background-color:navy;color:white;">
   <h2>Space Fun Facts</h2>
 <ul>
   <li>A day on Venus is longer than a year on Venus.</li>
@@ -108,9 +118,10 @@
 </ul>
 </section>
 </main>
-<div class="bottom-bar">
+<!-- <div class="bottom-bar">
     <h2>Bottom bar</h2>
-</div>
+</div> -->
+<div class="popup"></div>
 </body>
 
 </html>
